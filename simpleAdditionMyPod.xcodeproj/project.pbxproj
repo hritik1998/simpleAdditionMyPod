@@ -16,6 +16,7 @@
 		CF3E632F262DA5DF007C7458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3E632D262DA5DF007C7458 /* Main.storyboard */; };
 		CF3E6331262DA5E4007C7458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3E6330262DA5E4007C7458 /* Assets.xcassets */; };
 		CF3E6334262DA5E4007C7458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF3E6332262DA5E4007C7458 /* LaunchScreen.storyboard */; };
+		CF3E633D262DAB10007C7458 /* simpleAdditionMyPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3E633C262DAB10007C7458 /* simpleAdditionMyPod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		CF3E6330262DA5E4007C7458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF3E6333262DA5E4007C7458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF3E6335262DA5E4007C7458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF3E633C262DAB10007C7458 /* simpleAdditionMyPod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleAdditionMyPod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CF3E6308262DA5B0007C7458 /* simpleAdditionMyPod.h */,
 				CF3E6309262DA5B0007C7458 /* Info.plist */,
+				CF3E633C262DAB10007C7458 /* simpleAdditionMyPod.swift */,
 			);
 			path = simpleAdditionMyPod;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					CF3E6304262DA5B0007C7458 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 					CF3E630D262DA5B1007C7458 = {
 						CreatedOnToolsVersion = 12.3;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF3E633D262DAB10007C7458 /* simpleAdditionMyPod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		CF3E631A262DA5B1007C7458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FV6LSDGT2M;
@@ -454,6 +460,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cedcoss.hritik.simpleAdditionMyPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,6 +469,7 @@
 		CF3E631B262DA5B1007C7458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FV6LSDGT2M;
@@ -486,6 +494,7 @@
 		CF3E631D262DA5B1007C7458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FV6LSDGT2M;
 				INFOPLIST_FILE = simpleAdditionMyPodTests/Info.plist;
@@ -504,6 +513,7 @@
 		CF3E631E262DA5B1007C7458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FV6LSDGT2M;
 				INFOPLIST_FILE = simpleAdditionMyPodTests/Info.plist;
